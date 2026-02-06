@@ -1,5 +1,6 @@
 import subprocess
 from pathlib import Path
+from urllib.parse import quote
 
 BASE = Path("resource")
 
@@ -55,7 +56,7 @@ for topic in sorted(BASE.iterdir()):
 
         rows.append(f"""
         <tr>
-            <td><a href="{file.replace("#", "%23")}">{display}</a></td>
+            <td><a href="{quote(str(file))}">{display}</a></td>
             <td>{date}</td>
             <td>{size}</td>
         </tr>
