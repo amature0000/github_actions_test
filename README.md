@@ -49,7 +49,7 @@ project/
 ## How to Use
 
 ### 1 파일 추가/수정
-`resource/` 폴더에 파일을 추가하거나 수정합니다.
+`resource/` 폴더에 파일/폴더 등을 구조에 맞게 추가/수정/삭제합니다.
 
 ### 2 Push
 `runme.bat`을 실행합니다.
