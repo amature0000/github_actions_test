@@ -110,13 +110,42 @@ th {{
 del {{
     color: #888;
 }}
+
+.search-container {{
+    margin: 30px 0;
+    text-align: center;
+}}
+
+#searchBox {{
+    width: 60%;
+    max-width: 500px;
+
+    padding: 10px 16px;
+    font-size: 15px;
+
+    border: 1px solid #ddd;
+    border-radius: 10px;
+
+    outline: none;
+
+    transition: all 0.2s ease;
+}}
+
+#searchBox:hover {{
+    border-color: #bbb;
+}}
+
+#searchBox:focus {{
+    border-color: #4f8cff;
+    box-shadow: 0 0 0 3px rgba(79, 140, 255, 0.15);
+}}
 </style>
 </head>
 <body>
 <div style="margin-bottom:20px;">
-<input id="searchBox" placeholder="검색..." />
 </div>
 <h1>Download Center</h1>
+<input id="searchBox" placeholder="검색..." />
 
 {''.join(sections)}
 <script src="script.js"></script>

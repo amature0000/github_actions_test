@@ -9,3 +9,21 @@ document.getElementById("searchBox").addEventListener("input", function () {
         row.style.display = text.includes(keyword) ? "" : "none";
     });
 });
+
+window.addEventListener("DOMContentLoaded", () => {
+
+    document.querySelectorAll("tbody").forEach(tbody => {
+
+        const rows = Array.from(tbody.querySelectorAll("tr"));
+
+        rows.sort((a, b) => {
+            const dateA = new Date(a.cells[1].textContent.trim());
+            const dateB = new Date(b.cells[1].textContent.trim());
+
+            return dateB - dateA;
+        });
+
+        rows.forEach(row => tbody.appendChild(row));
+    });
+
+});
