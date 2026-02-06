@@ -23,3 +23,6 @@ jobs:
           git add index.html
           git commit -m "auto: update index" || echo "no change"
           git push
+          
+permissions:
+  contents: write
