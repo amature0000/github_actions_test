@@ -55,7 +55,7 @@ for topic in sorted(BASE.iterdir()):
 
         rows.append(f"""
         <tr>
-            <td><a href="{file}">{display}</a></td>
+            <td><a href="{file.replace("#", "%23")}">{display}</a></td>
             <td>{date}</td>
             <td>{size}</td>
         </tr>
