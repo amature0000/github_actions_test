@@ -113,11 +113,13 @@ del {{
 </style>
 </head>
 <body>
-
+<div style="margin-bottom:20px;">
+<input id="searchBox" placeholder="검색..." />
+</div>
 <h1>Download Center</h1>
 
 {''.join(sections)}
-
+<script src="script.js"></script>
 </body>
 </html>
 """
